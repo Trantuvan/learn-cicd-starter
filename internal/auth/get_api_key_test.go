@@ -18,7 +18,7 @@ func TestGetAPIKey(t *testing.T) {
 		{name: "no_authorization", auth: "", msg: "no authorization header included"},
 		{name: "malformed_no_prefix_ApiKey", auth: "gibbresh fasf", msg: "malformed authorization header"},
 		{name: "malformed_Apikey_len", auth: "Apikey", msg: "malformed authorization header"},
-		{name: "happy_path", auth: "ApiKey 124", apiKey: "12"},
+		{name: "happy_path", auth: "ApiKey xxxx", apiKey: "xxxx"},
 	}
 
 	for _, tc := range cases {
